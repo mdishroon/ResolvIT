@@ -1,0 +1,7 @@
+# ResolvIT: Autonomous IT Support Agent
+
+ResolvIT is a modular, Python based autonomous agent architecture designed to automatically process and resolve Tier 1 and Tier 2 IT helpdesk tickets. Built to demonstrate advanced systems thinking and state management, this project ingests mock tickets formatted to mirror real world ConnectWise payloads. The agent utilizes a bespoke reasoning loop to evaluate complex technical issues and dynamically select the appropriate custom tool for resolution without relying on prepackaged low code platforms.
+
+The architecture is explicitly divided into specialized modules to ensure high scalability and easy integration of future tools. The agents directory houses the core reasoning logic where the support agent analyzes incoming text to determine the best course of action. The tools directory contains mock enterprise systems, including a simulated Active Directory database that accurately tracks user state and enforces realistic business rules, such as a strict three strike lockout policy for treasury accounts. 
+
+To run this application locally, you must first clone the repository and navigate into the root project directory. Create a fresh Python virtual environment to keep your system dependencies completely isolated, and then activate it using your terminal. Once your environment is active, simply execute the main Python script to watch ResolvIT autonomously ingest the JSON ticket data, evaluate the system notes, and execute the correct commands to resolve simulated Active Directory and Mitel MiCollab issues.
